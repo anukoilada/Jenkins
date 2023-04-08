@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World and welcome to Devops jenkins learning course'
+                echo 'Hello World and welcome to Devops jenkins learning
+                '
             }
         }
     }
