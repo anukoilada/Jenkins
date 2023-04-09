@@ -27,24 +27,20 @@ pipeline {
             parallel {
                 stage('One') {
                     steps {
-                        sh "env"
-                        sh "echo printing the git repo name $GIT_URL"
-                        sh "cat .git/config"
-                        sh "cat /home/centos/file.txt"
                         sh "echo STAGE ONE"
-                        sh "sleep 1"
+                        sh "sleep 100"
                     }
                 }
                 stage('Two') {
                     steps {
                         sh "echo STAGE TWO"
-                        sh "sleep 1"
+                        sh "sleep 100"
                     }
                 }
                 stage('Three') {
                     steps {
                         sh "echo STAGE THREE"
-                        sh "sleep 1"
+                        sh "sleep 100"
                     }
                 }
             }
