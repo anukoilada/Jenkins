@@ -1,6 +1,6 @@
 // An example of showing Declarative Pipeline
 pipeline {
-    agent any
+    agent ws
 
     environment { 
         ENV_URL  = "pipeline.learning.com"             // Declaring pipeline at Pipeline level
